@@ -15,16 +15,16 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://adb-7674599708099350.10.azuredatabricks.net
+      host: https://e2-demo-field-eng.cloud.databricks.com/
 
   prod:
     mode: production
     workspace:
-      host: https://adb-7674599708099350.10.azuredatabricks.net
-      # We explicitly specify /Workspace/Users/sol.ackerman@databricks.com to make sure we only have a single copy.
-      root_path: /Workspace/Users/sol.ackerman@databricks.com/.bundle/${bundle.name}/${bundle.target}
+      host: https://e2-demo-field-eng.cloud.databricks.com/
+      # We explicitly specify /Workspace/Users/christopher.chalcraft@databricks.com to make sure we only have a single copy.
+      root_path: /Workspace/Users/christopher.chalcraft@databricks.com/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: sol.ackerman@databricks.com
+      - user_name: christopher.chalcraft@databricks.com
         level: CAN_MANAGE
     run_as:
-      user_name: sol.ackerman@databricks.com
+      user_name: christopher.chalcraft@databricks.com
